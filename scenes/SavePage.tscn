@@ -1,0 +1,1063 @@
+[gd_scene load_steps=55 format=2]
+
+[ext_resource path="res://resources/UI-Theme.tres" type="Theme" id=1]
+[ext_resource path="res://resources/Montserrat-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://resources/Montserrat-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://icons/plus-line.png" type="Texture" id=4]
+[ext_resource path="res://icons/Marked.png" type="Texture" id=5]
+[ext_resource path="res://icons/chevron-left-line.png" type="Texture" id=6]
+[ext_resource path="res://icons/chevron-right-line.png" type="Texture" id=7]
+[ext_resource path="res://resources/FONT.tres" type="DynamicFont" id=8]
+[ext_resource path="res://icons/minus-line (1).png" type="Texture" id=9]
+[ext_resource path="res://icons/chevron-down-line.png" type="Texture" id=10]
+[ext_resource path="res://icons/image (14).png" type="Texture" id=11]
+[ext_resource path="res://icons/Phone.png" type="Texture" id=12]
+[ext_resource path="res://scripts/SavePage.gd" type="Script" id=13]
+[ext_resource path="res://icons/SPACER.png" type="Texture" id=14]
+[ext_resource path="res://icons/small SPACER.png" type="Texture" id=15]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+
+[sub_resource type="StyleBoxFlat" id=57]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=58]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=59]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=60]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=61]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=62]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=63]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=64]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=65]
+content_margin_left = 25.0
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=66]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=67]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=68]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=69]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=70]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=71]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=72]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=73]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=74]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=75]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=76]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=44]
+default_font = ExtResource( 8 )
+CheckBox/colors/font_color = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+CheckBox/icons/checked = ExtResource( 4 )
+CheckBox/icons/unchecked = ExtResource( 9 )
+CheckBox/styles/hover = SubResource( 57 )
+CheckBox/styles/hover_pressed = SubResource( 58 )
+CheckBox/styles/normal = SubResource( 59 )
+CheckBox/styles/pressed = SubResource( 60 )
+HScrollBar/styles/grabber = SubResource( 61 )
+HScrollBar/styles/grabber_highlight = SubResource( 62 )
+HScrollBar/styles/grabber_pressed = SubResource( 63 )
+HScrollBar/styles/scroll = SubResource( 64 )
+HSplitContainer/constants/autohide = 10
+Label/colors/font_color = Color( 0, 0, 0, 1 )
+LineEdit/styles/normal = SubResource( 65 )
+MenuButton/styles/normal = SubResource( 66 )
+OptionButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+OptionButton/fonts/font = ExtResource( 8 )
+OptionButton/icons/arrow = ExtResource( 10 )
+OptionButton/styles/hover = SubResource( 67 )
+OptionButton/styles/normal = SubResource( 68 )
+OptionButton/styles/pressed = SubResource( 69 )
+Panel/styles/panel = SubResource( 70 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
+PopupMenu/fonts/font = ExtResource( 8 )
+PopupMenu/icons/radio_checked = ExtResource( 9 )
+PopupMenu/icons/radio_unchecked = ExtResource( 9 )
+PopupMenu/styles/hover = SubResource( 71 )
+PopupMenu/styles/panel = SubResource( 72 )
+VScrollBar/styles/grabber = SubResource( 73 )
+VScrollBar/styles/grabber_highlight = SubResource( 74 )
+VScrollBar/styles/grabber_pressed = SubResource( 75 )
+VScrollBar/styles/scroll = SubResource( 76 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=45]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=46]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 0.498039, 0.819608, 1, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 1, 0.576471, 0.619608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=47]
+size = 11
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=48]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0.101961, 0.423529, 0.705882, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=8]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=9]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=49]
+bg_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=55]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=56]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=50]
+bg_color = Color( 0.2, 0.521569, 0.803922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=53]
+size = 96
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=54]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[node name="SavedPage" type="Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 832, 0 )
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 32
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Card" type="Panel" parent="MarginContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 992.0
+margin_bottom = 568.0
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 44 )
+
+[node name="CardContainer" type="MarginContainer" parent="MarginContainer/Card"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="HBoxContainer" parent="MarginContainer/Card/CardContainer"]
+margin_right = 960.0
+margin_bottom = 536.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftButton" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment"]
+margin_right = 64.0
+margin_bottom = 536.0
+mouse_filter = 2
+alignment = 1
+
+[node name="Background" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/LeftButton"]
+margin_right = 64.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 64, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 13 )
+
+[node name="Button1" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/LeftButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/LeftButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/LeftButton/Background/Alignment"]
+margin_top = 236.0
+margin_right = 64.0
+margin_bottom = 300.0
+mouse_filter = 2
+texture_normal = ExtResource( 6 )
+texture_disabled = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment"]
+margin_left = 68.0
+margin_right = 892.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 32
+custom_constants/margin_top = 24
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+
+[node name="VAlignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer"]
+margin_left = 32.0
+margin_top = 24.0
+margin_right = 792.0
+margin_bottom = 504.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 8
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment"]
+margin_right = 760.0
+size_flags_horizontal = 3
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeaderContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment"]
+margin_top = 8.0
+margin_right = 760.0
+margin_bottom = 48.0
+mouse_filter = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="[SPACER]" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/HeaderContainer"]
+margin_top = 4.0
+margin_right = 32.0
+margin_bottom = 36.0
+size_flags_vertical = 4
+texture_normal = ExtResource( 15 )
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/HeaderContainer"]
+margin_left = 36.0
+margin_right = 724.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 45 )
+text = "[TILE TEXT]"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="SaveFilter" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/HeaderContainer"]
+margin_left = 728.0
+margin_top = 4.0
+margin_right = 760.0
+margin_bottom = 36.0
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment"]
+margin_top = 56.0
+margin_right = 760.0
+margin_bottom = 136.0
+rect_clip_content = true
+mouse_filter = 2
+alignment = 1
+
+[node name="TagRow1" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer"]
+margin_right = 760.0
+margin_bottom = 24.0
+alignment = 1
+
+[node name="Tag0" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow1"]
+margin_left = 324.0
+margin_right = 435.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 46 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagRow2" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer"]
+margin_top = 28.0
+margin_right = 760.0
+margin_bottom = 52.0
+alignment = 1
+
+[node name="Tag1" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 209.0
+margin_right = 320.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 4 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag2" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 324.0
+margin_right = 435.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 4 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag3" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 439.0
+margin_right = 550.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 4 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagRow3" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer"]
+margin_top = 56.0
+margin_right = 760.0
+margin_bottom = 80.0
+alignment = 1
+
+[node name="Tag4" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow3"]
+margin_left = 267.0
+margin_right = 378.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 4 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag5" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/TagContainer/TagRow3"]
+margin_left = 382.0
+margin_right = 493.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 4 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SummaryContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment"]
+margin_top = 144.0
+margin_right = 760.0
+margin_bottom = 256.0
+custom_constants/margin_top = 12
+custom_constants/margin_bottom = 12
+
+[node name="SummaryText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/SummaryContainer"]
+margin_top = 12.0
+margin_right = 760.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 54 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 47 )
+custom_styles/normal = SubResource( 48 )
+text = "[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . ."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment"]
+margin_top = 264.0
+margin_right = 760.0
+margin_bottom = 480.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+custom_constants/separation = 8
+alignment = 2
+
+[node name="AmenityInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer"]
+margin_right = 184.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 7 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AmenityInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 208.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "AMENITIES"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContactInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 192.0
+margin_right = 376.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 49 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 208.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "CONTACT INFO"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 61.0
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer2"]
+margin_left = 15.0
+margin_right = 47.0
+margin_bottom = 32.0
+disabled = true
+texture_normal = ExtResource( 12 )
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer2"]
+margin_left = 51.0
+margin_top = 5.0
+margin_right = 152.0
+margin_bottom = 26.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 55 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_top = 69.0
+margin_right = 168.0
+margin_bottom = 101.0
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer"]
+margin_left = 8.0
+margin_right = 40.0
+margin_bottom = 32.0
+mouse_filter = 2
+disabled = true
+texture_normal = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer"]
+margin_left = 44.0
+margin_top = 5.0
+margin_right = 159.0
+margin_bottom = 26.0
+custom_colors/font_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+custom_fonts/font = SubResource( 56 )
+text = "WEBSITE LINK"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DisabilityInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 384.0
+margin_right = 568.0
+margin_bottom = 216.0
+rect_pivot_offset = Vector2( -215, -83 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 50 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/DisabilityInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 208.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "ACCESIBILITY"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AgeInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 576.0
+margin_right = 760.0
+margin_bottom = 216.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 12 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AgeInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 208.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "AGE GROUPS"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 9 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NoSavePopUP" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer"]
+visible = false
+margin_left = 32.0
+margin_top = 24.0
+margin_right = 792.0
+margin_bottom = 504.0
+alignment = 1
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/NoSavePopUP"]
+margin_top = 96.0
+margin_right = 760.0
+margin_bottom = 335.0
+custom_fonts/font = SubResource( 53 )
+text = "NOTHING 
+SAVED"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/NoSavePopUP"]
+margin_top = 339.0
+margin_right = 760.0
+margin_bottom = 384.0
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 54 )
+text = "Browse through the immense catelouge on the Explore Page, and save your favorites by hitting
+the bookmark next to the tourist destination name!!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightButton" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 536.0
+mouse_filter = 2
+alignment = 1
+
+[node name="Background" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/RightButton"]
+margin_right = 64.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 64, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 14 )
+
+[node name="Button2" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/RightButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/RightButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/RightButton/Background/Alignment"]
+margin_top = 236.0
+margin_right = 64.0
+margin_bottom = 300.0
+mouse_filter = 2
+disabled = true
+texture_normal = ExtResource( 7 )
+texture_disabled = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/LeftButton/Background/Button1" to="." method="_on_Button1_pressed"]
+[connection signal="resized" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/HeaderContainer/TitleText" to="." method="_on_TitleText_resized"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/HeaderContainer/SaveFilter" to="." method="_on_SaveFilter_toggled"]
+[connection signal="resized" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/SummaryContainer/SummaryText" to="." method="_on_SummaryText_resized"]
+[connection signal="gui_input" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer" to="." method="_on_HBoxContainer_gui_input"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/RightButton/Background/Button2" to="." method="_on_Button2_pressed"]

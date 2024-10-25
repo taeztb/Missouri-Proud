@@ -1,0 +1,195 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://resources/Montserrat-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://resources/UI-Theme.tres" type="Theme" id=2]
+[ext_resource path="res://scripts/SearchContainer.gd" type="Script" id=3]
+[ext_resource path="res://icons/search-line.png" type="Texture" id=4]
+[ext_resource path="res://icons/small SPACER.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=24]
+size = 20
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+
+[node name="SearchContainer" type="VBoxContainer"]
+margin_right = 640.0
+margin_bottom = 201.0
+mouse_filter = 2
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchBoxContainer" type="MarginContainer" parent="."]
+margin_right = 640.0
+margin_bottom = 96.0
+mouse_filter = 2
+custom_constants/margin_right = 16
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+
+[node name="SearchBox" type="LineEdit" parent="SearchBoxContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 624.0
+margin_bottom = 96.0
+rect_min_size = Vector2( 0, 64 )
+focus_mode = 1
+theme = ExtResource( 2 )
+custom_colors/selection_color = Color( 0, 0.321569, 0.603922, 1 )
+custom_colors/cursor_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_selected = Color( 1, 1, 1, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 24 )
+max_length = 50
+right_icon = ExtResource( 8 )
+placeholder_text = "Search"
+caret_blink = true
+
+[node name="SearchIconContainer" type="HBoxContainer" parent="SearchBoxContainer/SearchBox"]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchIcon" type="Sprite" parent="SearchBoxContainer/SearchBox/SearchIconContainer"]
+position = Vector2( -27, 32 )
+texture = ExtResource( 4 )
+
+[node name="FilterContainer" type="MarginContainer" parent="."]
+margin_top = 100.0
+margin_right = 640.0
+margin_bottom = 169.0
+custom_constants/margin_right = 16
+custom_constants/margin_top = 8
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 16
+
+[node name="ContentContainer" type="ScrollContainer" parent="FilterContainer"]
+margin_left = 32.0
+margin_top = 8.0
+margin_right = 624.0
+margin_bottom = 53.0
+rect_min_size = Vector2( 0, 32 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource( 2 )
+scroll_vertical_enabled = false
+
+[node name="VAlignment" type="VBoxContainer" parent="FilterContainer/ContentContainer"]
+margin_right = 752.0
+margin_bottom = 39.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HAlignment" type="HBoxContainer" parent="FilterContainer/ContentContainer/VAlignment"]
+margin_right = 752.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 30 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 25
+
+[node name="RegionFilter" type="OptionButton" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_right = 120.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 120, 0 )
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+enabled_focus_mode = 0
+text = " ALL Missouri"
+align = 1
+expand_icon = true
+items = [ " ALL Missouri", null, false, 0, null, "", null, true, 1, null, " NW Missouri", null, false, 2, null, " NE Missouri", null, false, 3, null, " CE Missouri", null, false, 4, null, " SW Missouri", null, false, 5, null, " SE Missouri", null, false, 6, null ]
+selected = 0
+
+[node name="OutdoorsFilter" type="CheckBox" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 145.0
+margin_right = 238.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 24 )
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Outdoors"
+align = 1
+expand_icon = true
+
+[node name="HistoricalFilter" type="CheckBox" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 263.0
+margin_right = 356.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 24 )
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Historical"
+align = 1
+expand_icon = true
+
+[node name="AttractionsFilter" type="CheckBox" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 381.0
+margin_right = 486.0
+margin_bottom = 30.0
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Attractions"
+align = 1
+expand_icon = true
+
+[node name="EntertainmentFilter" type="CheckBox" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 511.0
+margin_right = 641.0
+margin_bottom = 30.0
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Entertainment"
+align = 1
+expand_icon = true
+
+[node name="FoodFilter" type="CheckBox" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 666.0
+margin_right = 727.0
+margin_bottom = 30.0
+focus_mode = 0
+size_flags_horizontal = 3
+theme = ExtResource( 2 )
+enabled_focus_mode = 0
+text = "Food"
+align = 1
+expand_icon = true
+
+[node name="[SPACER]" type="Panel" parent="FilterContainer/ContentContainer/VAlignment/HAlignment"]
+margin_left = 752.0
+margin_right = 752.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 0, 5 )
+custom_styles/panel = SubResource( 29 )
+
+[node name="[SPACER]" type="Panel" parent="FilterContainer/ContentContainer/VAlignment"]
+margin_top = 34.0
+margin_right = 752.0
+margin_bottom = 39.0
+rect_min_size = Vector2( 0, 5 )
+custom_styles/panel = SubResource( 29 )
+
+[connection signal="text_changed" from="SearchBoxContainer/SearchBox" to="." method="_on_SearchBox_text_changed"]
+[connection signal="item_selected" from="FilterContainer/ContentContainer/VAlignment/HAlignment/RegionFilter" to="." method="_on_RegionFilter_item_selected"]
+[connection signal="toggled" from="FilterContainer/ContentContainer/VAlignment/HAlignment/OutdoorsFilter" to="." method="_on_OutdoorsFilter_toggled"]
+[connection signal="toggled" from="FilterContainer/ContentContainer/VAlignment/HAlignment/HistoricalFilter" to="." method="_on_HistoricalFilter_toggled"]
+[connection signal="toggled" from="FilterContainer/ContentContainer/VAlignment/HAlignment/AttractionsFilter" to="." method="_on_AttractionsFilter_toggled"]
+[connection signal="toggled" from="FilterContainer/ContentContainer/VAlignment/HAlignment/EntertainmentFilter" to="." method="_on_EntertainmentFilter_toggled"]
+[connection signal="toggled" from="FilterContainer/ContentContainer/VAlignment/HAlignment/FoodFilter" to="." method="_on_FoodFilter_toggled"]

@@ -1,0 +1,188 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://resources/Montserrat-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://resources/Montserrat-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://resources/UI-Theme.tres" type="Theme" id=3]
+[ext_resource path="res://icons/bookmark-minus.png" type="Texture" id=4]
+[ext_resource path="res://icons/Marked.png" type="Texture" id=5]
+[ext_resource path="res://scripts/DataBaseCard.gd" type="Script" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 0.498039, 0.819608, 1, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 1, 0.576471, 0.619608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=4]
+size = 11
+font_data = ExtResource( 1 )
+
+[node name="DataBaseCard" type="Panel"]
+margin_right = 497.0
+margin_bottom = 128.0
+rect_min_size = Vector2( 0, 128 )
+rect_clip_content = true
+theme = ExtResource( 3 )
+script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+custom_constants/margin_right = 16
+custom_constants/margin_top = 16
+custom_constants/margin_left = 16
+custom_constants/margin_bottom = 16
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer"]
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 481.0
+margin_bottom = 112.0
+mouse_filter = 2
+custom_constants/separation = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HeaderContainer" type="HBoxContainer" parent="MarginContainer/ContentContainer"]
+margin_right = 465.0
+margin_bottom = 32.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleText" type="Label" parent="MarginContainer/ContentContainer/HeaderContainer"]
+margin_right = 429.0
+margin_bottom = 31.0
+size_flags_horizontal = 3
+theme = ExtResource( 3 )
+custom_fonts/font = SubResource( 1 )
+text = "[Title Here]"
+valign = 1
+autowrap = true
+
+[node name="SaveFilter" type="TextureButton" parent="MarginContainer/ContentContainer/HeaderContainer"]
+margin_left = 433.0
+margin_right = 465.0
+margin_bottom = 32.0
+focus_mode = 0
+toggle_mode = true
+texture_normal = ExtResource( 4 )
+texture_pressed = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagContainer" type="HBoxContainer" parent="MarginContainer/ContentContainer"]
+margin_top = 35.0
+margin_right = 465.0
+margin_bottom = 59.0
+rect_clip_content = true
+mouse_filter = 2
+
+[node name="Tag0" type="Label" parent="MarginContainer/ContentContainer/TagContainer"]
+margin_right = 111.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 5 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag1" type="Label" parent="MarginContainer/ContentContainer/TagContainer"]
+margin_left = 115.0
+margin_right = 226.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 3 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag2" type="Label" parent="MarginContainer/ContentContainer/TagContainer"]
+margin_left = 230.0
+margin_right = 341.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 3 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag3" type="Label" parent="MarginContainer/ContentContainer/TagContainer"]
+margin_left = 345.0
+margin_right = 377.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 3 )
+text = "..."
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SummaryText" type="Label" parent="MarginContainer/ContentContainer"]
+margin_top = 62.0
+margin_right = 465.0
+margin_bottom = 96.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 4 )
+text = "[Summary Here] . . ."
+autowrap = true
+clip_text = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="gui_input" from="." to="." method="_on_DataBaseCard_gui_input"]
+[connection signal="toggled" from="MarginContainer/ContentContainer/HeaderContainer/SaveFilter" to="." method="_on_SaveFilter_toggled"]

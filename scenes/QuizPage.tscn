@@ -1,0 +1,1563 @@
+[gd_scene load_steps=69 format=2]
+
+[ext_resource path="res://resources/UI-Theme.tres" type="Theme" id=1]
+[ext_resource path="res://resources/Montserrat-Bold.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://resources/Montserrat-Regular.ttf" type="DynamicFontData" id=3]
+[ext_resource path="res://resources/FONT.tres" type="DynamicFont" id=4]
+[ext_resource path="res://icons/plus-line.png" type="Texture" id=5]
+[ext_resource path="res://icons/small SPACER.png" type="Texture" id=6]
+[ext_resource path="res://icons/chevron-left-line.png" type="Texture" id=7]
+[ext_resource path="res://icons/SPACER.png" type="Texture" id=8]
+[ext_resource path="res://icons/minus-line (1).png" type="Texture" id=9]
+[ext_resource path="res://icons/chevron-right-line.png" type="Texture" id=10]
+[ext_resource path="res://icons/Phone.png" type="Texture" id=11]
+[ext_resource path="res://icons/chevron-down-line.png" type="Texture" id=12]
+[ext_resource path="res://icons/image (14).png" type="Texture" id=13]
+[ext_resource path="res://icons/Marked.png" type="Texture" id=14]
+[ext_resource path="res://resources/OtherBarNotch.tres" type="Theme" id=15]
+[ext_resource path="res://resources/CurrentBarNotch.tres" type="Theme" id=16]
+[ext_resource path="res://new_buttongroup.tres" type="ButtonGroup" id=17]
+[ext_resource path="res://scripts/QuizPage.gd" type="Script" id=18]
+[ext_resource path="res://icons/bookmark-minus.png" type="Texture" id=19]
+
+[sub_resource type="StyleBoxFlat" id=22]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+
+[sub_resource type="StyleBoxFlat" id=23]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=24]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=26]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=27]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=28]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=29]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=30]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=31]
+content_margin_left = 25.0
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=32]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=33]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=34]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=35]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+expand_margin_right = 10.0
+
+[sub_resource type="StyleBoxFlat" id=36]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=37]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+
+[sub_resource type="StyleBoxFlat" id=38]
+content_margin_left = 10.0
+content_margin_right = 10.0
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=39]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=40]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=41]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id=42]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="Theme" id=43]
+default_font = ExtResource( 4 )
+CheckBox/colors/font_color = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_hover_pressed = Color( 0, 0, 0, 1 )
+CheckBox/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+CheckBox/icons/checked = ExtResource( 5 )
+CheckBox/icons/unchecked = ExtResource( 9 )
+CheckBox/styles/hover = SubResource( 23 )
+CheckBox/styles/hover_pressed = SubResource( 24 )
+CheckBox/styles/normal = SubResource( 25 )
+CheckBox/styles/pressed = SubResource( 26 )
+HScrollBar/styles/grabber = SubResource( 27 )
+HScrollBar/styles/grabber_highlight = SubResource( 28 )
+HScrollBar/styles/grabber_pressed = SubResource( 29 )
+HScrollBar/styles/scroll = SubResource( 30 )
+HSplitContainer/constants/autohide = 10
+Label/colors/font_color = Color( 0, 0, 0, 1 )
+LineEdit/styles/normal = SubResource( 31 )
+MenuButton/styles/normal = SubResource( 32 )
+OptionButton/colors/font_color_focus = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_hover = Color( 0, 0, 0, 1 )
+OptionButton/colors/font_color_pressed = Color( 0, 0, 0, 1 )
+OptionButton/fonts/font = ExtResource( 4 )
+OptionButton/icons/arrow = ExtResource( 12 )
+OptionButton/styles/hover = SubResource( 33 )
+OptionButton/styles/normal = SubResource( 34 )
+OptionButton/styles/pressed = SubResource( 35 )
+Panel/styles/panel = SubResource( 36 )
+PopupMenu/colors/font_color = Color( 0, 0, 0, 1 )
+PopupMenu/colors/font_color_hover = Color( 0, 0, 0, 1 )
+PopupMenu/fonts/font = ExtResource( 4 )
+PopupMenu/icons/radio_checked = ExtResource( 9 )
+PopupMenu/icons/radio_unchecked = ExtResource( 9 )
+PopupMenu/styles/hover = SubResource( 37 )
+PopupMenu/styles/panel = SubResource( 38 )
+VScrollBar/styles/grabber = SubResource( 39 )
+VScrollBar/styles/grabber_highlight = SubResource( 40 )
+VScrollBar/styles/grabber_pressed = SubResource( 41 )
+VScrollBar/styles/scroll = SubResource( 42 )
+
+[sub_resource type="DynamicFont" id=62]
+size = 96
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=45]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=46]
+size = 36
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=44]
+size = 48
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=65]
+size = 24
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=63]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id=66]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=64]
+content_margin_left = 16.0
+content_margin_right = 16.0
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=67]
+size = 24
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=69]
+bg_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxFlat" id=70]
+bg_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id=68]
+bg_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+
+[sub_resource type="StyleBoxFlat" id=71]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="DynamicFont" id=72]
+size = 32
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=73]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 0.498039, 0.819608, 1, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=74]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color( 1, 0.576471, 0.619608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=75]
+size = 11
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=76]
+bg_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=77]
+bg_color = Color( 0.101961, 0.423529, 0.705882, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=78]
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=79]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=80]
+bg_color = Color( 0.737255, 0.176471, 0.219608, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="DynamicFont" id=81]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=82]
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=83]
+bg_color = Color( 0.2, 0.521569, 0.803922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=84]
+bg_color = Color( 0, 0.321569, 0.603922, 1 )
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+
+[sub_resource type="StyleBoxFlat" id=87]
+bg_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+
+[node name="QuizPage" type="Panel"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 832, 0 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 22 )
+script = ExtResource( 18 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 32
+custom_constants/margin_top = 32
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Card" type="Panel" parent="MarginContainer"]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 992.0
+margin_bottom = 568.0
+rect_clip_content = true
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 43 )
+
+[node name="CardContainer" type="MarginContainer" parent="MarginContainer/Card"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="HBoxContainer" parent="MarginContainer/Card/CardContainer"]
+margin_right = 960.0
+margin_bottom = 536.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment"]
+margin_right = 960.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 100
+custom_constants/margin_top = 48
+custom_constants/margin_left = 100
+custom_constants/margin_bottom = 64
+
+[node name="CoverContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer"]
+margin_left = 100.0
+margin_top = 48.0
+margin_right = 860.0
+margin_bottom = 472.0
+custom_constants/separation = 8
+alignment = 1
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/CoverContainer"]
+margin_top = 65.0
+margin_right = 760.0
+margin_bottom = 183.0
+custom_fonts/font = SubResource( 62 )
+text = "Where to Go?"
+align = 1
+valign = 1
+
+[node name="SubTitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/CoverContainer"]
+margin_top = 191.0
+margin_right = 760.0
+margin_bottom = 236.0
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 45 )
+text = "Take a quick quiz to find speedy suggestions! 
+Only ten questions to plan your dream vacation!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ButtonContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/CoverContainer"]
+margin_top = 244.0
+margin_right = 760.0
+margin_bottom = 359.0
+custom_constants/margin_right = 256
+custom_constants/margin_top = 64
+custom_constants/margin_left = 256
+
+[node name="StartButton" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/CoverContainer/ButtonContainer"]
+margin_left = 256.0
+margin_top = 64.0
+margin_right = 504.0
+margin_bottom = 115.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 46 )
+enabled_focus_mode = 0
+text = "Start Quiz!"
+
+[node name="QuizContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer"]
+visible = false
+margin_left = 100.0
+margin_top = 48.0
+margin_right = 860.0
+margin_bottom = 495.0
+custom_constants/separation = 8
+
+[node name="ProgressBar" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_right = 760.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 0, 16 )
+size_flags_horizontal = 3
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Notch1" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_right = 76.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 16 )
+
+[node name="Notch2" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 76.0
+margin_right = 152.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch3" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 152.0
+margin_right = 228.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch4" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 228.0
+margin_right = 304.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch5" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 304.0
+margin_right = 380.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch6" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 380.0
+margin_right = 456.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch7" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 456.0
+margin_right = 532.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch8" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 532.0
+margin_right = 608.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch9" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 608.0
+margin_right = 684.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch10" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ProgressBar"]
+margin_left = 684.0
+margin_right = 760.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="QuestionContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 24.0
+margin_right = 760.0
+margin_bottom = 161.0
+custom_constants/margin_top = 8
+custom_constants/margin_bottom = 16
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/QuestionContainer"]
+margin_top = 8.0
+margin_right = 760.0
+margin_bottom = 121.0
+custom_constants/separation = 8
+
+[node name="QuestionText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/QuestionContainer/VBoxContainer"]
+margin_right = 760.0
+margin_bottom = 60.0
+custom_fonts/font = SubResource( 44 )
+text = "Question #1"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="SubTitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/QuestionContainer/VBoxContainer"]
+margin_top = 68.0
+margin_right = 760.0
+margin_bottom = 113.0
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 45 )
+text = "Take a quick quiz to find speedy suggestions! 
+Only ten questions to plan your dream vacation!"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button1" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 169.0
+margin_right = 760.0
+margin_bottom = 206.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 65 )
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 66 )
+custom_styles/normal = SubResource( 64 )
+toggle_mode = true
+enabled_focus_mode = 0
+group = ExtResource( 17 )
+text = "A ) [ANSWER TEXT]"
+align = 0
+
+[node name="Button2" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 214.0
+margin_right = 760.0
+margin_bottom = 251.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 65 )
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 66 )
+custom_styles/normal = SubResource( 64 )
+toggle_mode = true
+enabled_focus_mode = 0
+group = ExtResource( 17 )
+text = "B ) [ANSWER TEXT]"
+align = 0
+
+[node name="Button3" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 259.0
+margin_right = 760.0
+margin_bottom = 296.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 65 )
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 66 )
+custom_styles/normal = SubResource( 64 )
+toggle_mode = true
+enabled_focus_mode = 0
+group = ExtResource( 17 )
+text = "C ) [ANSWER TEXT]"
+align = 0
+
+[node name="Button4" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 304.0
+margin_right = 760.0
+margin_bottom = 341.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 65 )
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 66 )
+custom_styles/normal = SubResource( 64 )
+toggle_mode = true
+enabled_focus_mode = 0
+group = ExtResource( 17 )
+text = "D) [ANSWER TEXT]"
+align = 0
+
+[node name="Button5" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 349.0
+margin_right = 760.0
+margin_bottom = 386.0
+focus_mode = 0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
+custom_colors/font_color_pressed = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 65 )
+custom_styles/hover = SubResource( 63 )
+custom_styles/pressed = SubResource( 66 )
+custom_styles/normal = SubResource( 64 )
+toggle_mode = true
+enabled_focus_mode = 0
+group = ExtResource( 17 )
+text = "E) [ANSWER TEXT]"
+align = 0
+
+[node name="ButtonContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer"]
+margin_top = 394.0
+margin_right = 760.0
+margin_bottom = 447.0
+custom_constants/margin_top = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ButtonContainer"]
+margin_top = 16.0
+margin_right = 760.0
+margin_bottom = 53.0
+alignment = 2
+
+[node name="NextButton" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ButtonContainer/HBoxContainer"]
+margin_left = 577.0
+margin_right = 760.0
+margin_bottom = 37.0
+focus_mode = 0
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_colors/font_color_hover = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_colors/font_color_pressed = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 67 )
+custom_styles/hover = SubResource( 69 )
+custom_styles/pressed = SubResource( 70 )
+custom_styles/normal = SubResource( 68 )
+enabled_focus_mode = 0
+text = "Next Question"
+
+[node name="ResultContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer"]
+visible = false
+margin_left = 100.0
+margin_top = 48.0
+margin_right = 860.0
+margin_bottom = 472.0
+custom_constants/separation = 8
+alignment = 1
+
+[node name="SubTitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer"]
+margin_top = 57.0
+margin_right = 760.0
+margin_bottom = 78.0
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 45 )
+text = "The results indicate you'll be happy with"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer"]
+margin_top = 86.0
+margin_right = 760.0
+margin_bottom = 204.0
+custom_fonts/font = SubResource( 62 )
+text = "FUN"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer"]
+margin_top = 212.0
+margin_right = 760.0
+margin_bottom = 295.0
+custom_constants/margin_top = 32
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer/MarginContainer"]
+margin_top = 32.0
+margin_right = 760.0
+margin_bottom = 83.0
+custom_constants/separation = 128
+alignment = 1
+
+[node name="RetakeButton" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer/MarginContainer/HBoxContainer"]
+margin_left = 81.0
+margin_right = 309.0
+margin_bottom = 51.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 46 )
+enabled_focus_mode = 0
+text = "Retake Quiz"
+
+[node name="ViewResultButton" type="Button" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer/MarginContainer/HBoxContainer"]
+margin_left = 437.0
+margin_right = 679.0
+margin_bottom = 51.0
+focus_mode = 0
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 46 )
+enabled_focus_mode = 0
+text = "View Results"
+
+[node name="ButtonContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer"]
+margin_top = 303.0
+margin_right = 760.0
+margin_bottom = 367.0
+custom_constants/margin_right = 256
+custom_constants/margin_top = 64
+custom_constants/margin_left = 256
+
+[node name="ViewContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment"]
+visible = false
+margin_right = 960.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+
+[node name="LeftButton" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer"]
+margin_right = 64.0
+margin_bottom = 536.0
+mouse_filter = 2
+alignment = 1
+
+[node name="Background" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/LeftButton"]
+margin_right = 64.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 64, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 71 )
+
+[node name="Button1" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/LeftButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/LeftButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/LeftButton/Background/Alignment"]
+margin_top = 236.0
+margin_right = 64.0
+margin_bottom = 300.0
+mouse_filter = 2
+texture_normal = ExtResource( 7 )
+texture_disabled = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer"]
+margin_left = 68.0
+margin_right = 892.0
+margin_bottom = 536.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/margin_right = 32
+custom_constants/margin_top = 24
+custom_constants/margin_left = 32
+custom_constants/margin_bottom = 32
+
+[node name="VAlignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer"]
+margin_left = 32.0
+margin_top = 24.0
+margin_right = 792.0
+margin_bottom = 504.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 8
+alignment = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ProgressBar" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment"]
+margin_right = 760.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 0, 16 )
+size_flags_horizontal = 3
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Notch1" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/ProgressBar"]
+margin_right = 152.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 16 )
+
+[node name="Notch2" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/ProgressBar"]
+margin_left = 152.0
+margin_right = 304.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch3" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/ProgressBar"]
+margin_left = 304.0
+margin_right = 456.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch4" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/ProgressBar"]
+margin_left = 456.0
+margin_right = 608.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="Notch5" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/ProgressBar"]
+margin_left = 608.0
+margin_right = 760.0
+margin_bottom = 16.0
+size_flags_horizontal = 3
+theme = ExtResource( 15 )
+
+[node name="HeaderContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment"]
+margin_top = 24.0
+margin_right = 760.0
+margin_bottom = 64.0
+mouse_filter = 2
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="[SPACER]" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/HeaderContainer"]
+margin_top = 4.0
+margin_right = 32.0
+margin_bottom = 36.0
+size_flags_vertical = 4
+texture_normal = ExtResource( 6 )
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/HeaderContainer"]
+margin_left = 36.0
+margin_right = 724.0
+margin_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme = ExtResource( 1 )
+custom_fonts/font = SubResource( 72 )
+text = "[TILE TEXT]"
+align = 1
+valign = 1
+autowrap = true
+
+[node name="SaveFilter" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/HeaderContainer"]
+margin_left = 728.0
+margin_top = 4.0
+margin_right = 760.0
+margin_bottom = 36.0
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment"]
+margin_top = 72.0
+margin_right = 760.0
+margin_bottom = 152.0
+rect_clip_content = true
+mouse_filter = 2
+alignment = 1
+
+[node name="TagRow1" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer"]
+margin_right = 760.0
+margin_bottom = 24.0
+alignment = 1
+
+[node name="Tag0" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow1"]
+margin_left = 324.0
+margin_right = 435.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 73 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagRow2" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer"]
+margin_top = 28.0
+margin_right = 760.0
+margin_bottom = 52.0
+alignment = 1
+
+[node name="Tag1" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 209.0
+margin_right = 320.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 74 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag2" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 324.0
+margin_right = 435.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 74 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag3" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow2"]
+margin_left = 439.0
+margin_right = 550.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 74 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TagRow3" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer"]
+margin_top = 56.0
+margin_right = 760.0
+margin_bottom = 80.0
+alignment = 1
+
+[node name="Tag4" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow3"]
+margin_left = 267.0
+margin_right = 378.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 74 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Tag5" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/TagContainer/TagRow3"]
+margin_left = 382.0
+margin_right = 493.0
+margin_bottom = 24.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_styles/normal = SubResource( 74 )
+text = "[TAGS HERE]"
+valign = 1
+max_lines_visible = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SummaryContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment"]
+margin_top = 160.0
+margin_right = 760.0
+margin_bottom = 272.0
+custom_constants/margin_top = 12
+custom_constants/margin_bottom = 12
+
+[node name="SummaryText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/SummaryContainer"]
+margin_top = 12.0
+margin_right = 760.0
+margin_bottom = 100.0
+rect_min_size = Vector2( 0, 54 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_colors/font_color = Color( 0.4, 0.4, 0.4, 1 )
+custom_fonts/font = SubResource( 75 )
+custom_styles/normal = SubResource( 76 )
+text = "[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . .
+[Summary Here] . . ."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment"]
+margin_top = 280.0
+margin_right = 760.0
+margin_bottom = 480.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 3.0
+custom_constants/separation = 8
+alignment = 2
+
+[node name="AmenityInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer"]
+margin_right = 184.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 77 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AmenityInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 192.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 78 )
+text = "AMENITIES"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AmenityInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 79 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContactInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 192.0
+margin_right = 376.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 80 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 192.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 78 )
+text = "CONTACT INFO"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 61.0
+alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer2"]
+margin_left = 15.0
+margin_right = 47.0
+margin_bottom = 32.0
+disabled = true
+texture_normal = ExtResource( 11 )
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer2"]
+margin_left = 51.0
+margin_top = 5.0
+margin_right = 152.0
+margin_bottom = 26.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 81 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer"]
+margin_top = 69.0
+margin_right = 168.0
+margin_bottom = 101.0
+size_flags_horizontal = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer"]
+margin_left = 8.0
+margin_right = 40.0
+margin_bottom = 32.0
+mouse_filter = 2
+disabled = true
+texture_normal = ExtResource( 13 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer"]
+margin_left = 44.0
+margin_top = 5.0
+margin_right = 159.0
+margin_bottom = 26.0
+custom_colors/font_color = Color( 0.890196, 0.901961, 0.960784, 1 )
+custom_fonts/font = SubResource( 82 )
+text = "WEBSITE LINK"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DisabilityInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 384.0
+margin_right = 568.0
+margin_bottom = 200.0
+rect_pivot_offset = Vector2( -215, -83 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 83 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/DisabilityInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 192.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 78 )
+text = "ACCESIBILITY"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/DisabilityInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 79 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AgeInfo" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer"]
+margin_left = 576.0
+margin_right = 760.0
+margin_bottom = 200.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 84 )
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AgeInfo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 8
+custom_constants/margin_top = 8
+custom_constants/margin_left = 8
+custom_constants/margin_bottom = 8
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ContentContainer" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 176.0
+margin_bottom = 192.0
+custom_constants/separation = 8
+
+[node name="TitleText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer/ContentContainer"]
+margin_right = 168.0
+margin_bottom = 21.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 78 )
+text = "AGE GROUPS"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="InfoText" type="Label" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/AgeInfo/MarginContainer/ContentContainer"]
+margin_top = 29.0
+margin_right = 168.0
+margin_bottom = 50.0
+theme = ExtResource( 1 )
+custom_colors/font_color = Color( 0.929412, 0.937255, 0.984314, 1 )
+custom_fonts/font = SubResource( 79 )
+text = "[TEXT HERE]"
+align = 1
+valign = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RightButton" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer"]
+margin_left = 896.0
+margin_right = 960.0
+margin_bottom = 536.0
+mouse_filter = 2
+alignment = 1
+
+[node name="Background" type="Panel" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/RightButton"]
+margin_right = 64.0
+margin_bottom = 536.0
+rect_min_size = Vector2( 64, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 87 )
+
+[node name="Button2" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/RightButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Alignment" type="VBoxContainer" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/RightButton/Background"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureButton" parent="MarginContainer/Card/CardContainer/Alignment/ViewContainer/RightButton/Background/Alignment"]
+margin_top = 236.0
+margin_right = 64.0
+margin_bottom = 300.0
+mouse_filter = 2
+texture_normal = ExtResource( 10 )
+texture_disabled = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/CoverContainer/ButtonContainer/StartButton" to="." method="_on_StartButton_pressed"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/Button1" to="." method="_on_Button1_toggled"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/Button2" to="." method="_on_Button2_toggled"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/Button3" to="." method="_on_Button3_toggled"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/Button4" to="." method="_on_Button4_toggled"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/Button5" to="." method="_on_Button5_toggled"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/QuizContainer/ButtonContainer/HBoxContainer/NextButton" to="." method="_on_NextButton_pressed"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer/MarginContainer/HBoxContainer/RetakeButton" to="." method="_on_RetakeButton_pressed"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ContentContainer/ResultContainer/MarginContainer/HBoxContainer/ViewResultButton" to="." method="_on_ViewResultButton_pressed"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/LeftButton/Background/Button1" to="." method="_on_Button1_pressed"]
+[connection signal="resized" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/HeaderContainer/TitleText" to="." method="_on_TitleText_resized"]
+[connection signal="toggled" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/HeaderContainer/SaveFilter" to="." method="_on_SaveFilter_toggled"]
+[connection signal="resized" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/SummaryContainer/SummaryText" to="." method="_on_SummaryText_resized"]
+[connection signal="gui_input" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/ContentContainer/VAlignment/InfoContainer/ContactInfo/MarginContainer/ContentContainer/HBoxContainer" to="." method="_on_HBoxContainer_gui_input"]
+[connection signal="pressed" from="MarginContainer/Card/CardContainer/Alignment/ViewContainer/RightButton/Background/Button2" to="." method="_on_Button2_pressed"]

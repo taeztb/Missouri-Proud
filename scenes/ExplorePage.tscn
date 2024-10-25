@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://scenes/SearchContainer.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/DataBaseContainer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/FocusContainer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://resources/UI-Theme.tres" type="Theme" id=4]
+
+[sub_resource type="StyleBoxFlat" id=21]
+bg_color = Color( 0.968627, 0.972549, 0.988235, 1 )
+
+[node name="ExplorePage" type="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 832, 0 )
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_styles/panel = SubResource( 21 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ExplorePageContainer" type="HSplitContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeftAlign" type="VBoxContainer" parent="ExplorePageContainer"]
+margin_right = 562.0
+margin_bottom = 600.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+custom_constants/separation = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SearchContainer" parent="ExplorePageContainer/LeftAlign" instance=ExtResource( 1 )]
+margin_right = 562.0
+margin_bottom = 169.0
+
+[node name="DatabaseContainer" parent="ExplorePageContainer/LeftAlign" instance=ExtResource( 2 )]
+margin_top = 169.0
+margin_right = 562.0
+
+[node name="RightAlign" type="VBoxContainer" parent="ExplorePageContainer"]
+margin_left = 574.0
+margin_right = 1024.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 4.0
+
+[node name="FocusContainer" parent="ExplorePageContainer/RightAlign" instance=ExtResource( 3 )]
+margin_right = 450.0
