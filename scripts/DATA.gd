@@ -1,4 +1,4 @@
-﻿# global singleton script for managing, storing, and retreiving data files
+# global singleton script for managing, storing, and retreiving data files
 # warning-ignore-all:return_value_discarded
 extends Node
 
